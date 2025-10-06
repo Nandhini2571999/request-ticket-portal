@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi-Form Dashboard</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <button class="form-toggle" data-target="formEntryRequest">Entry Request</button>
+    <!-- <button class="form-toggle" data-target="formExitTicket">Exit Ticket</button>
+    <button class="form-toggle" data-target="formAnnualTicket">Annual Ticket</button>
+    <button class="form-toggle" data-target="formBusinessTravel">Business Travel</button> -->
+    <!-- More buttons as needed -->
+  </header>
+
+  <main>
+    <section id="form-container">
+      <!-- Forms will appear here -->
+    <form id="formEntryRequest" method="POST" action="{{ url_for('entry_request') }}">
+    <div class="form-grid">
+        <div class="form-group">
+        <label for="entity">Entity</label>
+        <select id="entity" name="entity" required>
+            <option value="" disabled selected>Select Entity</option>
+            <option value="TASC">TASC</option>
+            <option value="TopTalent">TopTalent</option>
+        </select>
+        </div>
+        <!-- Employee ID -->
+        <div class="form-group">
+            <label for="employeeId">Employee ID</label>
+            <input type="number" id="employeeId" name="employeeId" placeholder="Enter numeric ID" required>
+        </div>
+        
+        <!-- Employee Name -->
+        <div class="form-group">
+            <label for="employeeName">Employee Name</label>
+            <input type="text" id="employeeName" name="employeeName" placeholder="Full name" required>
+        </div>
+        
+        <!-- Nationality -->
+        <div class="form-group">
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" placeholder="e.g. Indian" required>
+        </div>
+        
+        <!-- Client Name -->
+        <div class="form-group">
+            <label for="clientName">Client Name</label>
+            <input type="text" id="clientName" name="clientName" placeholder="Client or company" required>
+        </div>
+        
+        <!-- Mobile Number -->
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{7,15}" placeholder="Digits only" required>
+        </div>
+        
+        <!-- Visa Type -->
+        <div class="form-group">
+            <label for="visaType">Visa Type</label>
+            <select id="visaType" name="visaType" required>
+                <option value="" disabled selected>Select Visa Type</option>
+                <option value="Visit Visa">Visit Visa</option>
+                <option value="Employment Visa">Employment Visa</option>
+                <option value="Mission Visa">Mission Visa</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+        </div>
+        
+        <!-- Ticket Needed -->
+        <div class="form-group">
+            <label for="ticketNeeded">Is Entry Ticket Needed?</label>
+            <select id="ticketNeeded" name="ticketNeeded" required>
+                <option value="" disabled selected>Yes or No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <!-- Entry Date -->
+        <div class="form-group full-width">
+            <label for="entryDate">Entry Date</label>
+            <input type="date" id="entryDate" name="entryDate" required>
+        </div>
+        
+        <!-- Departure Airport -->
+        <div class="form-group">
+            <label for="departureAirport">Departure Airport</label>
+            <input type="text" id="departureAirport" name="departureAirport" placeholder="e.g. Mumbai Intl." required>
+        </div>
+        
+        <!-- Arrival Airport -->
+        <div class="form-group">
+            <label for="arrivalAirport">Arrival Airport (UAE)</label>
+            <input type="text" id="arrivalAirport" name="arrivalAirport" placeholder="e.g. DXB" required>
+        </div>
+        
+        <!-- Travel Time -->
+        <div class="form-group">
+            <label for="travelTime">Travel Time Preference</label>
+            <select id="travelTime" name="travelTime" required>
+                <option value="" disabled selected>Select preference</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="No preference">No preference</option>
+            </select>
+        </div>
+        
+        <!-- Ticket Cost By -->
+        <div class="form-group">
+            <label for="ticketCostBy">Entry Ticket Cost Borne By</label>
+            <select id="ticketCostBy" name="ticketCostBy" required>
+                <option value="" disabled selected>Select payer</option>
+                <option value="All-inclusive">All-inclusive</option>
+                <option value="Cost to Client">Cost to Client</option>
+                <option value="Salary Deduction">Employee Salary Deduction</option>
+            </select>
+        </div>
+        
+        <!-- Hotel Needed -->
+        <div class="form-group">
+            <label for="hotelNeeded">Is Hotel Needed?</label>
+            <select id="hotelNeeded" name="hotelNeeded" required>
+                <option value="" disabled selected>Yes or No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <!-- Nights Stay -->
+        <div class="form-group">
+            <label for="nightsStay">No. of Nights of Stay</label>
+            <input type="number" id="nightsStay" name="nightsStay" placeholder="Enter number" min="1" required>
+        </div>
+        
+        <!-- Hotel Location -->
+        <div class="form-group">
+            <label for="hotelLocation">Hotel Location Preference</label>
+            <input type="text" id="hotelLocation" name="hotelLocation" placeholder="City or area" required>
+        </div>
+        
+        <!-- Hotel Cost By -->
+        <div class="form-group">
+            <label for="hotelCostBy">Hotel Cost Borne By</label>
+            <select id="hotelCostBy" name="hotelCostBy" required>
+                <option value="" disabled selected>Select payer</option>
+                <option value="All-inclusive">All-inclusive</option>
+                <option value="Cost to Client">Cost to Client</option>
+                <option value="Salary Deduction">Employee Salary Deduction</option>
+            </select>
+        </div>
+        
+        <!-- Pickup Needed -->
+        <div class="form-group">
+            <label for="pickupNeeded">Is Airport Pick-up Needed?</label>
+            <select id="pickupNeeded" name="pickupNeeded" required>
+                <option value="" disabled selected>Yes or No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <!-- Pickup Cost By -->
+        <div class="form-group">
+            <label for="pickupCostBy">Pick-up Cost Borne By</label>
+            <select id="pickupCostBy" name="pickupCostBy" required>
+                <option value="" disabled selected>Select payer</option>
+                <option value="All-inclusive">All-inclusive</option>
+                <option value="Cost to Client">Cost to Client</option>
+                <option value="Salary Deduction">Employee Salary Deduction</option>
+            </select>
+        </div>
+        </div>
+        
+        <button type="submit" class="btn-submit">Submit Entry Request</button>
+        </form>
+        </section>
+        </main>
+        
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+        </body>
+        
+        </html>

@@ -1,0 +1,31 @@
+r'''
+Python 3.10.11
+pip install easyocr
+pip install pytesseract pillow opencv-python
+pip install paddleocr
+pip install paddlepaddle
+
+Steps:
+
+Press Start
+
+Search "cmd"
+
+Right-click → Run as administrator
+
+Then install:
+pip install opencv-python --upgrade
+
+ 3. Manually Delete the Locking File
+You can try:
+
+Go to:
+
+vbnet
+
+C:\Users\nandh\MyProject\PythonProjects\pyvenv\Lib\site-packages\cv2
+Delete cv2.pyd
+
+Then run:
+pip install opencv-python --force-reinstall
+'''

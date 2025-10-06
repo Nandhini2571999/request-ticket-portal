@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi-Form Dashboard</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+</head>
+<body>
+  <header>
+    <!-- <button class="form-toggle" data-target="formEntryRequest">Entry Request</button> -->
+    <button class="form-toggle" data-target="formExitTicket">Exit Ticket</button>
+    <!-- <button class="form-toggle" data-target="formAnnualTicket">Annual Ticket</button>
+    <button class="form-toggle" data-target="formBusinessTravel">Business Travel</button> -->
+    <!-- More buttons as needed -->
+  </header>
+
+  <main>
+    <section id="form-container">
+      <!-- Forms will appear here -->
+    <form id="formExitTicket" method="POST" action="{{ url_for('exit_ticket') }}">
+<div class="form-grid">
+    <!-- Entity -->
+    <div class="form-group">
+        <label for="exitEntity">Entity</label>
+        <select id="exitEntity" name="entity" required>
+            <option value="" disabled selected>Select Entity</option>
+            <option value="TASC">TASC</option>
+            <option value="TopTalent">TopTalent</option>
+        </select>
+    </div>
+
+    <!-- Employee ID -->
+    <div class="form-group">
+        <label for="exitEmployeeId">Employee ID</label>
+        <input type="number" id="exitEmployeeId" name="employeeId" placeholder="Enter numeric ID" required>
+    </div>
+
+    <!-- Employee Name -->
+    <div class="form-group">
+        <label for="exitEmployeeName">Employee Name</label>
+        <input type="text" id="exitEmployeeName" name="employeeName" placeholder="Full name" required>
+    </div>
+
+    <!-- Client Name -->
+    <div class="form-group">
+        <label for="exitClientName">Client Name</label>
+        <input type="text" id="exitClientName" name="clientName" placeholder="Client or company" required>
+    </div>
+
+    <!-- Mobile Number -->
+    <div class="form-group">
+        <label for="exitMobileNumber">Mobile Number</label>
+        <input type="tel" id="exitMobileNumber" name="mobileNumber" pattern="[0-9]{7,15}" placeholder="Digits only"
+            required>
+    </div>
+
+    <!-- Visa Type -->
+    <div class="form-group">
+        <label for="exitVisaType">Visa Type</label>
+        <select id="exitVisaType" name="visaType" required>
+            <option value="" disabled selected>Select Visa Type</option>
+            <option value="Residence Visa">Residence Visa</option>
+            <option value="Labour Card">Labour Card</option>
+        </select>
+    </div>
+
+    <!-- Separation Type -->
+    <div class="form-group">
+        <label for="separationType">Separation Type</label>
+        <select id="separationType" name="separationType" required>
+            <option value="" disabled selected>Select Separation Type</option>
+            <option value="Resignation">Resignation</option>
+            <option value="Termination">Termination</option>
+            <option value="End of Service">End of Service</option>
+        </select>
+    </div>
+
+    <!-- Visa Cancelled -->
+    <div class="form-group">
+        <label for="visaCancelled">Is Visa Cancelation Complete?</label>
+        <select id="visaCancelled" name="visaCancelled" required>
+            <option value="" disabled selected>Yes or No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <!-- Exit Date -->
+    <div class="form-group full-width">
+        <label for="exitDate">Preferred Exit Travel Date</label>
+        <input type="date" id="exitDate" name="exitDate" required>
+    </div>
+
+    <!-- Departure Airport -->
+    <div class="form-group">
+        <label for="departureAirportUAE">Departure Airport (UAE)</label>
+        <input type="text" id="departureAirportUAE" name="departureAirport" placeholder="e.g. DXB" required>
+    </div>
+
+    <!-- Arrival Airport -->
+    <div class="form-group">
+        <label for="arrivalAirportHome">Arrival Airport (Home Country)</label>
+        <input type="text" id="arrivalAirportHome" name="arrivalAirport" placeholder="e.g. BLR" required>
+    </div>
+
+    <!-- Time Preference -->
+    <div class="form-group">
+        <label for="exitTimePref">Time Preference</label>
+        <select id="exitTimePref" name="timePreference" required>
+            <option value="" disabled selected>Select preference</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="No preference">No preference</option>
+        </select>
+    </div>
+
+    <!-- Cost By -->
+    <div class="form-group">
+        <label for="exitCostBy">Cost Borne By</label>
+        <select id="exitCostBy" name="costBy" required>
+            <option value="" disabled selected>Select payer</option>
+            <option value="All-inclusive">All-inclusive</option>
+            <option value="Cost to Client">Cost to Client</option>
+            <option value="Salary Deduction">Employee Salary Deduction</option>
+        </select>
+    </div>
+</div>
+
+<button type="submit" class="btn-submit">Submit Exit Ticket</button>
+</form>
+</section>
+</main>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>

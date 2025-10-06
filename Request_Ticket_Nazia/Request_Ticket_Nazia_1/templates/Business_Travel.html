@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi-Form Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+</head>
+<body>
+  <header>
+    <button class="form-toggle" data-target="formBusinessTravel">Business Travel</button>
+  </header>
+
+  <main>
+    <section id="form-container">
+    <form id="formBusinessTravel" method="POST" action="{{ url_for('business_travel') }}">
+    <input type="hidden" name="formType" value="BusinessTravel">
+    <div class="form-grid">
+        <div class="form-group">
+        <label for="bizEntity">Entity</label>
+        <select id="bizEntity" name="entity" required>
+            <option value="" disabled selected>Select Entity</option>
+            <option value="TASC">TASC</option>
+            <option value="TopTalent">TopTalent</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizEmployeeId">Employee ID</label>
+        <input
+            type="number"
+            id="bizEmployeeId"
+            name="employeeId"
+            placeholder="Enter numeric ID"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizTicketType">Ticket Type</label>
+        <select id="bizTicketType" name="ticketType" required>
+            <option value="" disabled selected>Select Ticket Type</option>
+            <option value="One-way">One-way</option>
+            <option value="Round-trip">Round-trip</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizEmployeeName">Employee Name</label>
+        <input
+            type="text"
+            id="bizEmployeeName"
+            name="employeeName"
+            placeholder="Full name"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizClientName">Client Name</label>
+        <input
+            type="text"
+            id="bizClientName"
+            name="clientName"
+            placeholder="Client or company"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizNationality">Nationality</label>
+        <input
+            type="text"
+            id="bizNationality"
+            name="nationality"
+            placeholder="e.g. Indian"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizMobileNumber">Mobile Number</label>
+        <input
+            type="tel"
+            id="bizMobileNumber"
+            name="mobileNumber"
+            pattern="[0-9]{7,15}"
+            placeholder="Digits only"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizTravelType">Business Travel Type</label>
+        <select id="bizTravelType" name="businessTravelType" required>
+            <option value="" disabled selected>Select Type</option>
+            <option value="One-way">One-way</option>
+            <option value="Round-trip">Round-trip</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizTicketCostBy">Business Ticket Cost Born By</label>
+        <select id="bizTicketCostBy" name="ticketCostBy" required>
+            <option value="" disabled selected>Select payer</option>
+            <option value="All-inclusive">All-inclusive</option>
+            <option value="Cost to Client">Cost to Client</option>
+            <option value="Salary Deduction">Employee Salary Deduction</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizDepAirportUAE">Departure Airport (UAE)</label>
+        <input
+            type="text"
+            id="bizDepAirportUAE"
+            name="departureAirportUAE"
+            placeholder="e.g. DXB"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizArrDestAirport">Arrival Destination Airport</label>
+        <input
+            type="text"
+            id="bizArrDestAirport"
+            name="arrivalDestinationAirport"
+            placeholder="City or airport code"
+            required
+        />
+        </div>
+
+        <div class="form-group full-width">
+        <label for="bizDepDate">Departure Date</label>
+        <input
+            type="date"
+            id="bizDepDate"
+            name="departureDate"
+            placeholder="DD/MM/YYYY"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizOutboundTime">Travel Time Preference (Outbound)</label>
+        <select id="bizOutboundTime" name="outboundTime" required>
+            <option value="" disabled selected>Select preference</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="No preference">No preference</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizHotelNeeded">Is Hotel Needed?</label>
+        <select id="bizHotelNeeded" name="hotelNeeded" required>
+            <option value="" disabled selected>Yes or No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizNightsStay">No. of Nights of Stay</label>
+        <input
+            type="number"
+            id="bizNightsStay"
+            name="nightsStay"
+            placeholder="Enter number"
+            min="1"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizHotelLocation">Hotel Location Preference</label>
+        <input
+            type="text"
+            id="bizHotelLocation"
+            name="hotelLocation"
+            placeholder="City or area"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizHotelCostBy">Hotel Cost Born By</label>
+        <select id="bizHotelCostBy" name="hotelCostBy" required>
+            <option value="" disabled selected>Select payer</option>
+            <option value="All-inclusive">All-inclusive</option>
+            <option value="Cost to Client">Cost to Client</option>
+            <option value="Salary Deduction">Employee Salary Deduction</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizPickupNeeded">Is Airport Pick-up Needed?</label>
+        <select id="bizPickupNeeded" name="pickupNeeded" required>
+            <option value="" disabled selected>Yes or No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizPickupCostBy">Pick-up Cost Born By</label>
+        <select id="bizPickupCostBy" name="pickupCostBy" required>
+            <option value="" disabled selected>Select payer</option>
+            <option value="All-inclusive">All-inclusive</option>
+            <option value="Cost to Client">Cost to Client</option>
+            <option value="Salary Deduction">Employee Salary Deduction</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="bizRetDepAirport">Departure Airport (Return)</label>
+        <input
+            type="text"
+            id="bizRetDepAirport"
+            name="returnDepartureAirport"
+            placeholder="e.g. LHR"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizRetArrAirport">Arrival Airport (UAE)</label>
+        <input
+            type="text"
+            id="bizRetArrAirport"
+            name="returnArrivalAirport"
+            placeholder="e.g. DXB"
+            required
+        />
+        </div>
+
+        <div class="form-group full-width">
+        <label for="bizReturnDate">Return Date</label>
+        <input
+            type="date"
+            id="bizReturnDate"
+            name="returnDate"
+            placeholder="DD/MM/YYYY"
+            required
+        />
+        </div>
+
+        <div class="form-group">
+        <label for="bizReturnTime">Travel Time Preference (Return)</label>
+        <select id="bizReturnTime" name="returnTime" required>
+            <option value="" disabled selected>Select preference</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="No preference">No preference</option>
+        </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn-submit">
+        Submit Business Travel Request
+    </button>
+    </form>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

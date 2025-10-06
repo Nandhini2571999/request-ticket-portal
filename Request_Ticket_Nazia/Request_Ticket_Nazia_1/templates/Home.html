@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Request Ticket Portal</title>
+</head>
+
+<body>
+    <h2>Welcome to Request Ticket Portal</h2>
+    <p>Select a form:</p>
+    <ul>
+        <li><a href="{{ url_for('annual_ticket') }}">Annual Ticket</a></li>
+        <li><a href="{{ url_for('business_travel') }}">Business Travel</a></li>
+        <li><a href="{{ url_for('entry_request') }}">Entry Request</a></li>
+        <li><a href="{{ url_for('exit_ticket') }}">Exit Ticket</a></li>
+    </ul>
+</body>
+
+</html>

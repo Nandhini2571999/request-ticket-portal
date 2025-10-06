@@ -1,0 +1,17 @@
+2025-08-07 08:53:49,402 - INFO - TCS Onboarding Initiated. 
+2025-08-07 08:54:07,342 - INFO - ====== WebDriver manager ======
+2025-08-07 08:54:09,589 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 08:54:09,965 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 08:54:10,150 - INFO - There is no [win64] chromedriver "138.0.7204.183" for browser google-chrome "138.0.7204" in cache
+2025-08-07 08:54:10,150 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 08:54:10,554 - INFO - WebDriver version 138.0.7204.183 selected
+2025-08-07 08:54:10,559 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2025-08-07 08:54:10,571 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2025-08-07 08:54:10,802 - INFO - Driver downloading response is 200
+2025-08-07 08:54:12,759 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 08:54:13,068 - INFO - Driver has been saved in cache [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.183]
+2025-08-07 08:55:07,255 - INFO - TCS Onboarding Initiated. 
+2025-08-07 08:55:09,012 - INFO - ====== WebDriver manager ======
+2025-08-07 08:55:10,481 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 08:55:10,635 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 08:55:10,803 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache

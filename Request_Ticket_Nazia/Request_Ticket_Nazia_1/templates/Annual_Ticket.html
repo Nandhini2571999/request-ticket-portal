@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi-Form Dashboard</title>
+  <!-- Load CSS from Flask static folder -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <header>
+    <button class="form-toggle" data-target="formAnnualTicket">Annual Ticket</button>
+    <!-- You can add other buttons later for Entry, Exit, Business -->
+  </header>
+
+  <main>
+    <section id="form-container">
+      <!-- Form now submits to Flask route -->
+      <form id="formAnnualTicket" method="POST" action="{{ url_for('annual_ticket') }}">
+        <input type="hidden" name="formType" value="AnnualTicket">
+
+        <div class="form-grid">
+          <!-- ✅ Your form fields stay the same -->
+          <div class="form-group">
+            <label for="annualEntity">Entity</label>
+            <select id="annualEntity" name="entity" required>
+              <option value="" disabled selected>Select Entity</option>
+              <option value="TASC">TASC</option>
+              <option value="TopTalent">TopTalent</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="annualEmployeeId">Employee ID</label>
+            <input type="number" id="annualEmployeeId" name="employeeId" placeholder="Enter numeric ID" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualEmployeeName">Employee Name</label>
+            <input type="text" id="annualEmployeeName" name="employeeName" placeholder="Full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualClientName">Client Name</label>
+            <input type="text" id="annualClientName" name="clientName" placeholder="Client or company" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualMobileNumber">Mobile Number</label>
+            <input type="tel" id="annualMobileNumber" name="mobileNumber" pattern="[0-9]{7,15}"
+              placeholder="Digits only" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualTicketType">Ticket Type</label>
+            <select id="annualTicketType" name="ticketType" required>
+              <option value="" disabled selected>Select Ticket Type</option>
+              <option value="One-way">One-way</option>
+              <option value="Round-trip">Round-trip</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="annualOutboundDepAirport">Departure Airport (UAE)</label>
+            <input type="text" id="annualOutboundDepAirport" name="outboundDepAirport" placeholder="e.g. DXB"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualOutboundArrAirport">Arrival Airport (Home Country)</label>
+            <input type="text" id="annualOutboundArrAirport" name="outboundArrAirport" placeholder="e.g. BLR"
+              required />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="annualOutboundDate">Travel Date (Outbound)</label>
+            <input type="date" id="annualOutboundDate" name="outboundDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualOutboundTime">Preferred Time (Outbound)</label>
+            <select id="annualOutboundTime" name="outboundTime" required>
+              <option value="" disabled selected>Select preference</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+              <option value="No preference">No preference</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="annualReturnDepAirport">Departure Airport (Return)</label>
+            <input type="text" id="annualReturnDepAirport" name="returnDepAirport" placeholder="e.g. BLR" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualReturnArrAirport">Arrival Airport (UAE)</label>
+            <input type="text" id="annualReturnArrAirport" name="returnArrAirport" placeholder="e.g. DXB" required />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="annualReturnDate">Travel Date (Return)</label>
+            <input type="date" id="annualReturnDate" name="returnDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="annualReturnTime">Preferred Time (Return)</label>
+            <select id="annualReturnTime" name="returnTime" required>
+              <option value="" disabled selected>Select preference</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+              <option value="No preference">No preference</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="annualCostBy">Cost Born By</label>
+            <select id="annualCostBy" name="costBy" required>
+              <option value="" disabled selected>Select payer</option>
+              <option value="All-inclusive">All-inclusive</option>
+              <option value="Cost to Client">Cost to Client</option>
+              <option value="Salary Deduction">Employee Salary Deduction</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Submit Annual Ticket Request
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ✅ Load JS from static -->
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>

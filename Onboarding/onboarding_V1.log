@@ -1,0 +1,137 @@
+2025-07-15 19:24:32,423 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:24:32,669 - INFO - ====== WebDriver manager ======
+2025-07-15 19:24:34,332 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:24:34,692 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:24:34,920 - INFO - There is no [win64] chromedriver "138.0.7204.94" for browser google-chrome "138.0.7204" in cache
+2025-07-15 19:24:34,920 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:24:35,480 - INFO - WebDriver version 138.0.7204.94 selected
+2025-07-15 19:24:35,485 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-15 19:24:35,488 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-15 19:24:36,099 - INFO - Driver downloading response is 200
+2025-07-15 19:24:37,978 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:24:38,369 - INFO - Driver has been saved in cache [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94]
+2025-07-15 19:24:42,982 - INFO - Some Error as occured while fetching the data : 'Database_Manager' object has no attribute 'fetchall_as_dict'
+2025-07-15 19:26:08,821 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:26:12,815 - INFO - ====== WebDriver manager ======
+2025-07-15 19:26:14,496 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:26:14,783 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:26:15,021 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:27:31,321 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:27:33,763 - INFO - ====== WebDriver manager ======
+2025-07-15 19:27:35,436 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:27:35,667 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:27:35,933 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:29:10,819 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:29:17,677 - INFO - ====== WebDriver manager ======
+2025-07-15 19:29:19,221 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:29:19,493 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:29:19,747 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:34:40,238 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:34:43,090 - INFO - ====== WebDriver manager ======
+2025-07-15 19:34:44,720 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:34:44,988 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:34:45,242 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:50:00,659 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:50:03,330 - INFO - ====== WebDriver manager ======
+2025-07-15 19:50:04,936 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:50:05,304 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:50:05,593 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:51:11,171 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:51:13,693 - INFO - ====== WebDriver manager ======
+2025-07-15 19:51:15,395 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:51:15,698 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:51:15,971 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:57:35,058 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:57:35,060 - INFO - ====== WebDriver manager ======
+2025-07-15 19:57:36,839 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:57:37,108 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:57:37,395 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 19:58:17,898 - INFO - TCS Onboarding Initiated. 
+2025-07-15 19:58:17,898 - INFO - ====== WebDriver manager ======
+2025-07-15 19:58:19,715 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:58:20,005 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 19:58:20,246 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:00:19,015 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:00:19,017 - INFO - ====== WebDriver manager ======
+2025-07-15 20:00:20,655 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:00:20,948 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:00:21,255 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:01:17,837 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:01:17,837 - INFO - ====== WebDriver manager ======
+2025-07-15 20:01:19,461 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:01:19,756 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:01:21,043 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:01:44,601 - INFO - Processing Stage0 started.
+2025-07-15 20:02:40,748 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:02:40,748 - INFO - ====== WebDriver manager ======
+2025-07-15 20:02:42,486 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:02:42,744 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:02:42,986 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:05:02,613 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:05:02,618 - INFO - ====== WebDriver manager ======
+2025-07-15 20:05:04,576 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:05:04,854 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:05:05,092 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:05:23,589 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:05:23,591 - INFO - ====== WebDriver manager ======
+2025-07-15 20:06:19,379 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:06:19,381 - INFO - ====== WebDriver manager ======
+2025-07-15 20:06:20,915 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:06:21,203 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:06:21,457 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:06:56,487 - INFO - Processing Stage0 started.
+2025-07-15 20:07:11,282 - INFO - Email sent to ['kokila.v@tascoutsourcing.com', '', '']
+2025-07-15 20:10:55,070 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:10:55,072 - INFO - ====== WebDriver manager ======
+2025-07-15 20:10:57,068 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:10:57,303 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:10:57,561 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:11:47,253 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:11:47,253 - INFO - ====== WebDriver manager ======
+2025-07-15 20:11:48,871 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:11:49,158 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:11:49,421 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:12:02,386 - INFO - Processing Stage0 started.
+2025-07-15 20:12:34,395 - INFO - Email sent to ['nandhini2571999@gmail.com', '', '']
+2025-07-15 20:12:57,028 - INFO - Processing Stage0 Ended.
+2025-07-15 20:12:59,714 - INFO - Processing Stage1 started
+2025-07-15 20:13:20,212 - INFO - Successfully login!
+2025-07-15 20:17:57,279 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:17:57,279 - INFO - ====== WebDriver manager ======
+2025-07-15 20:17:58,805 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:17:59,084 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:17:59,404 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:19:01,828 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:19:01,830 - INFO - ====== WebDriver manager ======
+2025-07-15 20:19:03,332 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:19:03,589 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:19:03,833 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:19:19,492 - INFO - Processing Stage0 started.
+2025-07-15 20:19:34,898 - INFO - Email sent to ['nandhini2571999@gmail.com', '', '']
+2025-07-15 20:19:41,761 - INFO - Processing Stage0 Ended.
+2025-07-15 20:19:44,024 - INFO - Processing Stage1 started
+2025-07-15 20:19:58,256 - INFO - Successfully login!
+2025-07-15 20:20:28,900 - INFO - updated successfully - UPDATE tasc_tracker SET updated_date = '2025-07-15 20:19:05', tasc_stages = 'Stage2 - New Employee Record Added' WHERE mail_id = 'nandhini2571999@gmail.com'
+2025-07-15 20:20:28,900 - INFO - status changing into : Stage2 - New Employee Record Added
+2025-07-15 20:20:31,331 - INFO - Processing Stage1 started
+2025-07-15 20:20:34,367 - INFO - Processing Stage2 started
+2025-07-15 20:26:13,633 - INFO - TCS Onboarding Initiated. 
+2025-07-15 20:26:13,634 - INFO - ====== WebDriver manager ======
+2025-07-15 20:26:15,435 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:26:15,912 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 20:26:16,157 - INFO - Driver [C:\Users\nandh\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-15 20:26:31,556 - INFO - Processing Stage0 started.
+2025-07-15 20:26:43,686 - INFO - Email sent to ['nandhini2571999@gmail.com', '', '']
+2025-07-15 20:26:49,018 - INFO - Processing Stage0 Ended.
+2025-07-15 20:26:51,459 - INFO - Processing Stage1 started
+2025-07-15 20:27:13,528 - INFO - Successfully login!
+2025-07-15 20:27:42,126 - INFO - updated successfully - UPDATE tasc_tracker SET updated_date = '2025-07-15 20:26:17', tasc_stages = 'Stage2 - New Employee Record Added' WHERE mail_id = 'nandhini2571999@gmail.com'
+2025-07-15 20:27:42,127 - INFO - status changing into : Stage2 - New Employee Record Added
+2025-07-15 20:27:48,589 - INFO - Processing Stage1 started
+2025-07-15 20:27:52,991 - INFO - Processing Stage2 started
+2025-07-15 20:28:17,211 - INFO - Processing Stage2 ended.
+2025-07-15 20:28:20,660 - INFO - Processing Stage3 started
+2025-07-15 20:30:35,392 - INFO - Got response to search unseen emails
+2025-07-15 20:30:35,856 - INFO - *** Process Starts! ***
+2025-07-15 20:30:57,639 - INFO - *** Process Completed ***
+2025-07-15 20:31:21,236 - INFO - Processing Stage3 ended.
